@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title><%= title %></title>
+    </head>
+
+    <body>
+        <div class="container">
+
+                <h1>TODO App</h1>
+                       
+                <form action="/create-todo" method="POST">
+                    <div>
+                        <p>DESCRIPTION</p>
+                        <input type="text" name = "description" required>
+                    </div>
+
+                    <div>
+                        <div>
+                            <p>CATEGORY</p>
+                            <select name="category" id="category" required>
+                                <option value="choose">Choose a Category</option>
+                                <option value="personal">Personal</option>
+                                <option value="work">Work</option>
+                                <option value="school">School</option>
+                                <option value="cleaning">Cleaning</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <p>DUE DATE</p>
+                            <input type= "date" name = "due_date" required>
+                        </div>
+                    </div>
+
+                    <div>
+                        <button type="submit">ADD TASK</button>
+                    </div>
+                </form> 
+
+                <div> 
+                    <button type="submit">DELETE TASKS</button>
+                </div>
+           
+
+                <ul>
+                        <div>
+                            <input type="checkbox" id="checkbox1" name="checkbox1" value="TODO1">
+                            <label for="checkbox1">
+                                <span>TODO1</span>
+                                <span class="label success">PERSONAL</span><br>
+                                <span>27/06/1997</span>
+                            </label>
+                        </div>
+                </ul>
+            
+
+        </div>
+    </body>
+</html>
